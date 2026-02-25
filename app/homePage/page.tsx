@@ -1,5 +1,6 @@
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
+import LogoutButton from "../components/LogoutButton"
 
 export default async function HomePage() {
   const cookieStore = await cookies()
@@ -17,15 +18,7 @@ export default async function HomePage() {
         <h1 className="text-3xl font-bold">
           Welcome <span className="text-4xl text-red-500"> {user.name}</span>
         </h1>
-
-        <form action="/api/logout" method="POST">
-          <button
-            type="submit"
-            className="mt-5 px-6 py-2 bg-red-500 text-white rounded-lg"
-          >
-            Logout
-          </button>
-        </form>
+        <LogoutButton/>
       </div>
     </div>
   )
