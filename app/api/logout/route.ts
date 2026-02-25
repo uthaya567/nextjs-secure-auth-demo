@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
 
-export async function POST() {
-  const response = NextResponse.redirect(new URL("/LoginPage", process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"))
+export async function POST(request: NextRequest) {
+  const response = NextResponse.redirect(new URL("/LoginPage", request.url))
 
   response.cookies.set("session", "", {
     httpOnly: true,
