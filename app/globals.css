@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* .Anime-title{
+  : rgb(36, 188, 171);
+} */
+
+@layer utilities {
+  .text-stroke-pink {
+    -webkit-text-stroke: 0.3px #d543ae;
+  }
+    .text-stroke-white {
+    -webkit-text-stroke:3px white;
+  }
+    .text-stroke-Type2-white {
+    -webkit-text-stroke:0.2px white;
+  }
+  .vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -30px;
+  }
+}
+
+.text-login {
+  font-weight: 800;
+}
