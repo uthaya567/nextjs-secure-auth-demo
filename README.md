@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔐 CRISPA – Next.js Authentication Demo
 
 A modern authentication system built with **Next.js App Router**, featuring secure session handling using **HttpOnly cookies**, API routes, and Middleware protection.
@@ -71,3 +72,7 @@ middleware.ts
 ```bash
 npm install
 npm run dev
+=======
+# nextjs-secure-auth-demo
+Modern authentication system built with Next.js featuring API-based login/register, HttpOnly session cookies, and protected routes using Middleware.
+>>>>>>> 0918e0325d4f598d2e67531e7afa3fdbe55208b9
